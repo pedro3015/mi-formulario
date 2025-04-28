@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="/procesar" method="post">
+      <h1>Formulario</h1>
+      <fieldset>
+        <!--Informacion Personal-->
+        <legend>Información Personal</legend>
+
+        <label for="name">Nombre: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Pedro Alvarez"
+          required
+        />
+
+        <label for="email">Correo electrónico: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ejemplo@correo.com"
+          required
+        />
+
+        <label for="tel">Telefono: </label>
+        <input
+          type="number"
+          name="tel"
+          id="tel"
+          placeholder="212555784557"
+          required
+        />
+
+        <label for="date">Fecha: </label>
+        <input type="date" name="date" id="date" required />
+
+        <label for="genero">Genero: </label>
+        <div class="contenedor">
+          <input type="radio" name="genero" id="masculino" value="masculino" />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" name="genero" id="femenino" value="femenino" />
+          <label for="femenino">Femenino</label>
+
+          <input type="radio" name="genero" id="otro" value="otro" />
+          <label for="otro">Otro</label>
+        </div>
+
+        <label for="intereses">Intereses: </label>
+
+        <div class="contenedor">
+          <input
+            type="checkbox"
+            name="intereses"
+            id="deportes"
+            value="deportes"
+          />
+          <label for="intereses">Deportes</label>
+
+          <input type="checkbox" name="intereses" id="musica" value="musica" />
+          <label for="intereses">Música</label>
+
+          <input type="checkbox" name="intereses" id="viajes" value="viajes" />
+          <label for="intereses">Viajes</label>
+
+          <input type="checkbox" name="intereses" id="arte" value="arte" />
+          <label for="intereses">Arte</label>
+
+          <input
+            type="checkbox"
+            name="intereses"
+            id="tecnologia"
+            value="tecnologia"
+          />
+          <label for="intereses">Tecnología</label>
+        </div>
+
+        <label for="pais">País: </label>
+        <select name="pais" id="pais" required>
+          <option value="venezuela">Venezuela</option>
+          <option value="colombia">Colombia</option>
+          <option value="peru">Perú</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="chile">Chile</option>
+          <option value="argentina">Argentina</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="brasil">Brasil</option>
+          <option value="mexico">México</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <!--Preferencias-->
+        <legend>Preferecias</legend>
+
+        <label for="trabajo-tipo">Tipo de trabajo: </label>
+        <div class="contenedor">
+          <input
+            type="checkbox"
+            name="trabajo-tipo"
+            id="presencial"
+            value="presencial"
+          />
+          <label for="trabajo-tipo">Presencial</label>
+          <input
+            type="checkbox"
+            name="trabajo-tipo"
+            id="remoto"
+            value="remoto"
+          />
+          <label for="trabajo-tipo">Remoto</label>
+          <input
+            type="checkbox"
+            name="trabajo-tipo"
+            id="hibrido"
+            value="hibrido"
+          />
+          <label for="trabajo-tipo">Híbrido</label>
+        </div>
+
+        <label for="horario">Horario: </label>
+        <div class="contenedor">
+          <input type="checkbox" name="horario" id="diurno" value="diurno" />
+          <label for="horario">Diurno</label>
+          <input
+            type="checkbox"
+            name="horario"
+            id="nocturno"
+            value="nocturno"
+          />
+          <label for="horario">Nocturno</label>
+          <input
+            type="checkbox"
+            name="horario"
+            id="flexible"
+            value="flexible"
+          />
+          <label for="horario">Flexible</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <!--Curriculum-->
+        <legend>Curriculum</legend>
+        <label for="curriculum">Adjuntar aquí: </label>
+        <input type="file" name="curriculum" id="curriculum" required />
+        <p>Formato permitido: PDF, DOCX</p>
+      </fieldset>
+
+      <fieldset>
+        <!--Comentarios-->
+        <legend>Comentarios</legend>
+
+        <label for="comentarios">Comentarios: </label>
+        <textarea name="comentarios" id="comentarios" rows="5"></textarea>
+      </fieldset>
+
+      <div class="botones">
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="limpiar">Limpiar</button>
+      </div>
+    </form>
+  </body>
+</html>

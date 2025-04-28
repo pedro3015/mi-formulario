@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-text: #e0e1dd;
+  --color-background: #0d1b2a;
+  --color-border: #415a77;
+  --font-size-base: 16px;
+  --font-size-lg: 2.75rem;
+  --font-size-sm: 0.875rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: var(--font-size-lg);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 3px solid var(--color-border);
+  border-radius: 18px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+button {
+  height: 60px;
+  width: 200px;
+  background-color: var(--color-border);
+  color: var(--color-text);
+  border: none;
+  border-radius: 36px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #1f4068;
+}
