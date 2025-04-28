@@ -68,6 +68,13 @@ input:focus {
   border-bottom: 2px solid var(--color-text);
 }
 
+input[type="file"] {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
 select {
   color: var(--color-text);
   font-size: var(--font-size-sm);
