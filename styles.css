@@ -88,6 +88,18 @@ option {
   border-radius: 15px;
 }
 
+textarea {
+  background-color: var(--color-border);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  border: none;
+  border-radius: 5px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 .botones {
   display: flex;
   justify-content: center;
