@@ -53,19 +53,18 @@ input {
   border: none;
   border-bottom: 2px solid var(--color-border);
   outline: none;
-  transition: .2s ease-in;
-}
-
-input[type=date]::-webkit-calendar-picker-indicator {
-  background-color: var(--color-text);
-  border-radius: 50%;
-  cursor: pointer;
+  transition: 0.2s ease-in;
 }
 
 input:focus {
   outline-style: none;
   background-color: var(--color-border);
   border-bottom: 2px solid var(--color-text);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: var(--color-text);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 input[type="file"] {
@@ -78,11 +77,11 @@ input[type="file"] {
 select {
   color: var(--color-text);
   font-size: var(--font-size-sm);
-  background:none;
+  background: none;
   border: none;
   padding: 1rem;
   border-bottom: 2px solid var(--color-border);
-  transition:0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 select:focus {
