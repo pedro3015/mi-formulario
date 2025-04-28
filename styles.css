@@ -12,7 +12,7 @@
 html {
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-border);
   color: var(--color-text);
 }
 *,
@@ -32,6 +32,9 @@ form {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
+  background-color: var(--color-background);
+  border-radius: 25px;
+  padding: 2rem 4rem;
 }
 
 fieldset {
@@ -40,6 +43,49 @@ fieldset {
   gap: 1rem;
   border: 3px solid var(--color-border);
   border-radius: 18px;
+}
+
+input {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  padding: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--color-border);
+  outline: none;
+  transition: .2s ease-in;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: var(--color-text);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input:focus {
+  outline-style: none;
+  background-color: var(--color-border);
+  border-bottom: 2px solid var(--color-text);
+}
+
+select {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  background:none;
+  border: none;
+  padding: 1rem;
+  border-bottom: 2px solid var(--color-border);
+  transition:0.1s ease-in-out;
+}
+
+select:focus {
+  outline: none;
+  background-color: var(--color-border);
+  border-bottom: 2px solid var(--color-text);
+}
+
+option {
+  border-radius: 15px;
 }
 
 .botones {
